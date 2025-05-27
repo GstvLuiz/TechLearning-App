@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLearn</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/logo.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="TechLearn Logo" class="logo-img">
+                <span class="logo-text">TechLearn</span>
+            </div>
+            
+            <nav class="nav">
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#cursos" class="nav-link">Cursos</a></li>
+                    <li class="nav-item"><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+                    <li class="nav-item"><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                    <li class="nav-item"><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-buttons">
+                <a href="#" class="btn btn-secondary">Login</a>
+                <a href="#" class="btn btn-primary">Cadastre-se</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Aprenda tecnologia de forma <span class="highlight">gamificada</span></h1>
+                <p class="hero-subtitle">Domine programação, design, DevOps e outras áreas de TI com uma metodologia divertida e eficiente. Aprenda no seu ritmo, ganhe pontos e conquiste certificados.</p>
+                
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i> Começar agora - Grátis
+                    </a>
+                    <a href="#cursos" class="btn btn-outline btn-lg">
+                        <i class="fas fa-book"></i> Ver cursos
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Cursos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-label">Alunos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">Avaliação</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="images/course_detail.png" alt="TechLearn App em dispositivos" class="hero-img">
+                <div class="hero-badges">
+                    <div class="badge">
+                        <i class="fas fa-medal"></i>
+                        <span>Gamificado</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificado</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Multiplataforma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Section -->
+    <section id="cursos" class="cursos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cursos em alta demanda</h2>
+                <p class="section-subtitle">Escolha entre diversas áreas da tecnologia e comece sua jornada de aprendizado</p>
+            </div>
+            
+            <div class="cursos-filtros">
+                <button class="filtro-btn active" data-filter="todos">Todos</button>
+                <button class="filtro-btn" data-filter="programacao">Programação</button>
+                <button class="filtro-btn" data-filter="design">Design</button>
+                <button class="filtro-btn" data-filter="devops">DevOps</button>
+                <button class="filtro-btn" data-filter="dados">Dados</button>
+                <button class="filtro-btn" data-filter="mobile">Mobile</button>
+            </div>
+            
+            <div class="cursos-grid">
+                <!-- Curso 1 -->
+                <div class="curso-card" data-categoria="programacao">
+                    <div class="curso-header">
+                        <div class="curso-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="curso-nivel">
+                            <span class="nivel iniciante">Iniciante</span>
+                        </div>
+                    </div>
+                    <h3 class="curso-titulo">JavaScript Moderno</h3>
+                    <p class="curso-descricao">Aprenda JavaScript do zero ao avançado com projetos práticos.</p>
+                    <div class="curso-stats">
+                        <div class="stat">
+                            <i class="fas fa-book"></i>
+                            <span>42 lições</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>20h total</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm curso-btn">Ver detalhes</a>
+                </div>
+                
+                <!-- Curso 2 -->
+                <div class="curso-card" data-categoria="design">
+                    <div class="curso-header">
+                        <div class="curso-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="curso-nivel">
+                            <span class="nivel iniciante">Iniciante</span>
+                        </div>
+                    </div>
+                    <h3 class="curso-titulo">UI/UX com Figma</h3>
+                    <p class="curso-descricao">Crie interfaces modernas e intuitivas usando Figma.</p>
+                    <div class="curso-stats">
+                        <div class="stat">
+                            <i class="fas fa-book"></i>
+                            <span>36 lições</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>18h total</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm curso-btn">Ver detalhes</a>
+                </div>
+                
+                <!-- Curso 3 -->
+                <div class="curso-card" data-categoria="devops">
+                    <div class="curso-header">
+                        <div class="curso-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="curso-nivel">
+                            <span class="nivel intermediario">Intermediário</span>
+                        </div>
+                    </div>
+                    <h3 class="curso-titulo">Docker & Kubernetes</h3>
+                    <p class="curso-descricao">Domine a conteinerização e orquestração de aplicações.</p>
+                    <div class="curso-stats">
+                        <div class="stat">
+                            <i class="fas fa-book"></i>
+                            <span>48 lições</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>25h total</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm curso-btn">Ver detalhes</a>
+                </div>
+                
+                <!-- Curso 4 -->
+                <div class="curso-card" data-categoria="dados">
+                    <div class="curso-header">
+                        <div class="curso-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="curso-nivel">
+                            <span class="nivel intermediario">Intermediário</span>
+                        </div>
+                    </div>
+                    <h3 class="curso-titulo">Ciência de Dados</h3>
+                    <p class="curso-descricao">Análise de dados com Python, Pandas e visualizações.</p>
+                    <div class="curso-stats">
+                        <div class="stat">
+                            <i class="fas fa-book"></i>
+                            <span>52 lições</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>30h total</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm curso-btn">Ver detalhes</a>
+                </div>
+                
+                <!-- Curso 5 -->
+                <div class="curso-card" data-categoria="mobile">
+                    <div class="curso-header">
+                        <div class="curso-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="curso-nivel">
+                            <span class="nivel avancado">Avançado</span>
+                        </div>
+                    </div>
+                    <h3 class="curso-titulo">React Native</h3>
+                    <p class="curso-descricao">Desenvolva apps para iOS e Android com um único código.</p>
+                    <div class="curso-stats">
+                        <div class="stat">
+                            <i class="fas fa-book"></i>
+                            <span>60 lições</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>35h total</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm curso-btn">Ver detalhes</a>
+                </div>
+                
+                <!-- Curso 6 -->
+                <div class="curso-card" data-categoria="programacao">
+                    <div class="curso-header">
+                        <div class="curso-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="curso-nivel">
+                            <span class="nivel iniciante">Iniciante</span>
+                        </div>
+                    </div>
+                    <h3 class="curso-titulo">Python Fundamentos</h3>
+                    <p class="curso-descricao">Aprenda a linguagem mais versátil do mercado de TI.</p>
+                    <div class="curso-stats">
+                        <div class="stat">
+                            <i class="fas fa-book"></i>
+                            <span>45 lições</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>22h total</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm curso-btn">Ver detalhes</a>
+                </div>
+            </div>
+            
+            <div class="cursos-cta">
+                <a href="#" class="btn btn-primary">Ver todos os cursos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section id="como-funciona" class="como-funciona">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como funciona</h2>
+                <p class="section-subtitle">Aprenda de forma divertida e eficiente com nossa metodologia gamificada</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">1. Crie sua conta</h3>
+                        <p class="step-description">Cadastre-se gratuitamente e tenha acesso a diversos cursos introdutórios.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">2. Escolha seu curso</h3>
+                        <p class="step-description">Navegue por categorias e escolha o curso que melhor se adapta aos seus objetivos.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">3. Complete desafios</h3>
+                        <p class="step-description">Avance nas lições, complete desafios práticos e ganhe pontos de experiência.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">4. Ganhe conquistas</h3>
+                        <p class="step-description">Desbloqueie badges, suba de nível e acompanhe seu progresso em tempo real.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gamification-preview">
+                <div class="streak-counter">
+                    <div class="streak-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="streak-info">
+                        <span class="streak-days">7</span>
+                        <span class="streak-label">dias de streak</span>
+                    </div>
+                </div>
+                
+                <div class="level-progress">
+                    <div class="level-info">
+                        <span class="level-number">Nível 5</span>
+                        <span class="xp-info">2450 XP</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                
+                <div class="badges-preview">
+                    <div class="badge">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="badge locked">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por que escolher o TechLearn?</h2>
+                <p class="section-subtitle">Descubra os diferenciais que tornam nossa plataforma única</p>
+            </div>
+            
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="beneficio-titulo">Aprendizado Gamificado</h3>
+                    <p class="beneficio-descricao">Mantenha-se motivado com elementos de jogos como pontos, níveis e conquistas.</p>
+                </div>
+                
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="beneficio-titulo">Projetos Práticos</h3>
+                    <p class="beneficio-descricao">Aplique o conhecimento em projetos reais que enriquecem seu portfólio.</p>
+                </div>
+                
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="beneficio-titulo">Certificados Reconhecidos</h3>
+                    <p class="beneficio-descricao">Obtenha certificados que agregam valor ao seu currículo profissional.</p>
+                </div>
+                
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="beneficio-titulo">Comunidade Ativa</h3>
+                    <p class="beneficio-descricao">Conecte-se com outros estudantes e profissionais da área de tecnologia.</p>
+                </div>
+                
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="beneficio-titulo">Acesso Multiplataforma</h3>
+                    <p class="beneficio-descricao">Estude em qualquer dispositivo, a qualquer hora e em qualquer lugar.</p>
+                </div>
+                
+                <div class="beneficio-card">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="beneficio-titulo">Conteúdo Atualizado</h3>
+                    <p class="beneficio-descricao">Acompanhe as últimas tendências e tecnologias do mercado de TI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O que dizem nossos alunos</h2>
+                <p class="section-subtitle">Histórias reais de quem transformou sua carreira com o TechLearn</p>
+            </div>
+            
+            <div class="depoimentos-slider">
+                <div class="depoimentos-wrapper">
+                    <!-- Depoimento 1 -->
+                    <div class="depoimento-card">
+                        <div class="depoimento-perfil">
+                            <div class="depoimento-avatar">
+                                <img src="images/koi.png" alt="Foto de perfil" class="avatar-img">
+                            </div>
+                            <div class="depoimento-info">
+                                <h3 class="depoimento-nome">Carlos Silva</h3>
+                                <p class="depoimento-cargo">Desenvolvedor Front-end</p>
+                                <div class="depoimento-estrelas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="depoimento-texto">"Comecei do zero na programação e em 6 meses consegui meu primeiro emprego como desenvolvedor. A metodologia gamificada me manteve motivado durante todo o processo."</p>
+                        <div class="depoimento-conquistas">
+                            <span class="conquista">
+                                <i class="fas fa-award"></i> 15 cursos concluídos
+                            </span>
+                            <span class="conquista">
+                                <i class="fas fa-fire"></i> 120 dias de streak
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento 2 -->
+                    <div class="depoimento-card">
+                        <div class="depoimento-perfil">
+                            <div class="depoimento-avatar">
+                                <img src="images/rabbit.png" alt="Foto de perfil" class="avatar-img">
+                            </div>
+                            <div class="depoimento-info">
+                                <h3 class="depoimento-nome">Ana Oliveira</h3>
+                                <p class="depoimento-cargo">UX/UI Designer</p>
+                                <div class="depoimento-estrelas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="depoimento-texto">"Os projetos práticos fizeram toda a diferença no meu aprendizado. Consegui montar um portfólio sólido e hoje trabalho em uma startup de tecnologia."</p>
+                        <div class="depoimento-conquistas">
+                            <span class="conquista">
+                                <i class="fas fa-award"></i> 8 cursos concluídos
+                            </span>
+                            <span class="conquista">
+                                <i class="fas fa-fire"></i> 90 dias de streak
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento 3 -->
+                    <div class="depoimento-card">
+                        <div class="depoimento-perfil">
+                            <div class="depoimento-avatar">
+                                <img src="images/bear.png" alt="Foto de perfil" class="avatar-img">
+                            </div>
+                            <div class="depoimento-info">
+                                <h3 class="depoimento-nome">Marcos Santos</h3>
+                                <p class="depoimento-cargo">DevOps Engineer</p>
+                                <div class="depoimento-estrelas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="depoimento-texto">"Migrei de área após 10 anos como administrador de sistemas. Os cursos de DevOps me deram confiança para dar esse passo e triplicar meu salário."</p>
+                        <div class="depoimento-conquistas">
+                            <span class="conquista">
+                                <i class="fas fa-award"></i> 12 cursos concluídos
+                            </span>
+                            <span class="conquista">
+                                <i class="fas fa-fire"></i> 180 dias de streak
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-btn next" aria-label="Próximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tire suas dúvidas sobre o TechLearn</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como funciona o período de teste gratuito?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você tem acesso gratuito a diversos cursos introdutórios e à primeira unidade de todos os cursos premium. Não é necessário informar dados de pagamento para começar a usar.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Os certificados são reconhecidos pelo mercado?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, nossos certificados são reconhecidos por diversas empresas parceiras e validados por profissionais da indústria. Cada certificado possui um código de verificação único.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Posso acessar os cursos offline?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, nosso aplicativo permite baixar as aulas para assistir offline. Basta ter conexão com a internet para sincronizar seu progresso quando terminar.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quanto tempo tenho para concluir um curso?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não há prazo para conclusão. Você pode aprender no seu próprio ritmo e acessar o conteúdo quantas vezes quiser enquanto sua assinatura estiver ativa.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Existe suporte para dúvidas durante os cursos?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, oferecemos fóruns de discussão, comunidade no Discord e suporte por e-mail. Assinantes premium têm acesso a mentorias ao vivo com instrutores.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Ainda tem dúvidas?</p>
+                <a href="#" class="btn btn-secondary">Fale conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Comece sua jornada na tecnologia hoje mesmo</h2>
+                <p class="cta-subtitle">Junte-se a milhares de alunos que estão transformando suas carreiras com o TechLearn</p>
+                
+                <form class="cta-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required class="cta-input">
+                    <button type="submit" class="btn btn-primary btn-lg">Começar Gratuitamente</button>
+                </form>
+                
+                <div class="cta-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>7 dias de acesso premium</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cancele quando quiser</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Suporte personalizado</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="app-download">
+                <h3>Baixe nosso aplicativo</h3>
+                <div class="app-buttons">
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-google-play"></i>
+                        <span>Google Play</span>
+                    </a>
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-apple"></i>
+                        <span>App Store</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="TechLearn Logo" class="logo-img">
+                        <span class="logo-text">TechLearn</span>
+                    </div>
+                    <p class="brand-description">Plataforma de ensino de tecnologia com metodologia gamificada.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Cursos</h3>
+                    <ul>
+                        <li><a href="#">Programação</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">DevOps</a></li>
+                        <li><a href="#">Dados</a></li>
+                        <li><a href="#">Mobile</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Parcerias</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Comunidade</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Reportar bug</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Licenças</a></li>
+                        <li><a href="#">Segurança</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 TechLearn. Todos os direitos reservados - Designed & Developed by GstvLuiz</p>
+                <div class="language-selector">
+                    <select name="language" id="language">
+                        <option value="pt-br">Português (BR)</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
